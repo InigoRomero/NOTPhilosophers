@@ -1,0 +1,453 @@
+[1;35m1582892486851: [1;31mFilósofo 0 is thinking 🤔
+[1;35m1582892486851: [1;31mFilósofo 0 has taken a fork 🍴
+[1;35m1582892486851: [1;31mFilósofo 0 has taken a fork 🍴
+[1;35m1582892486851: [1;31mFilósofo 0 is eating 🍔
+[1;35m1582892486851: [1;31mFilósofo 1 is thinking 🤔
+[1;35m1582892486851: [1;31mFilósofo 2 is thinking 🤔
+[1;35m1582892486851: [1;31mFilósofo 2 has taken a fork 🍴
+[1;35m1582892486851: [1;31mFilósofo 2 has taken a fork 🍴
+[1;35m1582892486851: [1;31mFilósofo 2 is eating 🍔
+[1;35m1582892486851: [1;31mFilósofo 3 is thinking 🤔
+[1;35m1582892486851: [1;31mFilósofo 4 is thinking 🤔
+[1;35m1582892486851: [1;31mFilósofo 4 has taken a fork 🍴
+[1;35m1582892486851: [1;31mFilósofo 4 has taken a fork 🍴
+[1;35m1582892486851: [1;31mFilósofo 4 is eating 🍔
+[1;35m1582892486851: [1;31mFilósofo 5 is thinking 🤔
+[1;35m1582892486851: [1;31mFilósofo 6 is thinking 🤔
+[1;35m1582892486851: [1;31mFilósofo 6 has taken a fork 🍴
+[1;35m1582892486851: [1;31mFilósofo 6 has taken a fork 🍴
+[1;35m1582892486851: [1;31mFilósofo 6 is eating 🍔
+[1;35m1582892486851: [1;31mFilósofo 7 is thinking 🤔
+[1;35m1582892486851: [1;31mFilósofo 8 is thinking 🤔
+[1;35m1582892486851: [1;31mFilósofo 8 has taken a fork 🍴
+[1;35m1582892486851: [1;31mFilósofo 8 has taken a fork 🍴
+[1;35m1582892486851: [1;31mFilósofo 8 is eating 🍔
+[1;35m1582892486851: [1;31mFilósofo 9 is thinking 🤔
+[1;35m1582892486851: [1;31mFilósofo 10 is thinking 🤔
+[1;35m1582892486851: [1;31mFilósofo 10 has taken a fork 🍴
+[1;35m1582892486851: [1;31mFilósofo 10 has taken a fork 🍴
+[1;35m1582892486851: [1;31mFilósofo 10 is eating 🍔
+[1;35m1582892486851: [1;31mFilósofo 11 is thinking 🤔
+[1;35m1582892486851: [1;31mFilósofo 12 is thinking 🤔
+[1;35m1582892486851: [1;31mFilósofo 12 has taken a fork 🍴
+[1;35m1582892486851: [1;31mFilósofo 12 has taken a fork 🍴
+[1;35m1582892486851: [1;31mFilósofo 12 is eating 🍔
+[1;35m1582892486851: [1;31mFilósofo 13 is thinking 🤔
+[1;35m1582892486851: [1;31mFilósofo 14 is thinking 🤔
+[1;35m1582892486851: [1;31mFilósofo 14 has taken a fork 🍴
+[1;35m1582892486851: [1;31mFilósofo 14 has taken a fork 🍴
+[1;35m1582892486851: [1;31mFilósofo 14 is eating 🍔
+[1;35m1582892486851: [1;31mFilósofo 15 is thinking 🤔
+[1;35m1582892486851: [1;31mFilósofo 16 is thinking 🤔
+[1;35m1582892486851: [1;31mFilósofo 16 has taken a fork 🍴
+[1;35m1582892486851: [1;31mFilósofo 16 has taken a fork 🍴
+[1;35m1582892486851: [1;31mFilósofo 16 is eating 🍔
+[1;35m1582892486851: [1;31mFilósofo 17 is thinking 🤔
+[1;35m1582892486851: [1;31mFilósofo 18 is thinking 🤔
+[1;35m1582892486851: [1;31mFilósofo 18 has taken a fork 🍴
+[1;35m1582892486851: [1;31mFilósofo 18 has taken a fork 🍴
+[1;35m1582892486851: [1;31mFilósofo 18 is eating 🍔
+[1;35m1582892486851: [1;31mFilósofo 19 is thinking 🤔
+[1;35m1582892486851: [1;31mFilósofo 20 is thinking 🤔
+[1;35m1582892486851: [1;31mFilósofo 20 has taken a fork 🍴
+[1;35m1582892486851: [1;31mFilósofo 20 has taken a fork 🍴
+[1;35m1582892486851: [1;31mFilósofo 20 is eating 🍔
+[1;35m1582892486851: [1;31mFilósofo 21 is thinking 🤔
+[1;35m1582892486852: [1;31mFilósofo 22 is thinking 🤔
+[1;35m1582892486852: [1;31mFilósofo 22 has taken a fork 🍴
+[1;35m1582892486852: [1;31mFilósofo 22 has taken a fork 🍴
+[1;35m1582892486852: [1;31mFilósofo 22 is eating 🍔
+[1;35m1582892486852: [1;31mFilósofo 23 is thinking 🤔
+[1;35m1582892486852: [1;31mFilósofo 24 is thinking 🤔
+[1;35m1582892486852: [1;31mFilósofo 24 has taken a fork 🍴
+[1;35m1582892486852: [1;31mFilósofo 24 has taken a fork 🍴
+[1;35m1582892486852: [1;31mFilósofo 24 is eating 🍔
+[1;35m1582892486852: [1;31mFilósofo 25 is thinking 🤔
+[1;35m1582892486852: [1;31mFilósofo 26 is thinking 🤔
+[1;35m1582892486852: [1;31mFilósofo 26 has taken a fork 🍴
+[1;35m1582892486852: [1;31mFilósofo 26 has taken a fork 🍴
+[1;35m1582892486852: [1;31mFilósofo 26 is eating 🍔
+[1;35m1582892486852: [1;31mFilósofo 27 is thinking 🤔
+[1;35m1582892486852: [1;31mFilósofo 28 is thinking 🤔
+[1;35m1582892486852: [1;31mFilósofo 28 has taken a fork 🍴
+[1;35m1582892486852: [1;31mFilósofo 28 has taken a fork 🍴
+[1;35m1582892486852: [1;31mFilósofo 28 is eating 🍔
+[1;35m1582892486852: [1;31mFilósofo 29 is thinking 🤔
+[1;35m1582892486852: [1;31mFilósofo 30 is thinking 🤔
+[1;35m1582892486852: [1;31mFilósofo 30 has taken a fork 🍴
+[1;35m1582892486852: [1;31mFilósofo 30 has taken a fork 🍴
+[1;35m1582892486852: [1;31mFilósofo 30 is eating 🍔
+[1;35m1582892486852: [1;31mFilósofo 31 is thinking 🤔
+[1;35m1582892486852: [1;31mFilósofo 32 is thinking 🤔
+[1;35m1582892486852: [1;31mFilósofo 32 has taken a fork 🍴
+[1;35m1582892486852: [1;31mFilósofo 32 has taken a fork 🍴
+[1;35m1582892486852: [1;31mFilósofo 32 is eating 🍔
+[1;35m1582892486852: [1;31mFilósofo 33 is thinking 🤔
+[1;35m1582892486852: [1;31mFilósofo 34 is thinking 🤔
+[1;35m1582892486852: [1;31mFilósofo 34 has taken a fork 🍴
+[1;35m1582892486852: [1;31mFilósofo 34 has taken a fork 🍴
+[1;35m1582892486852: [1;31mFilósofo 34 is eating 🍔
+[1;35m1582892486852: [1;31mFilósofo 35 is thinking 🤔
+[1;35m1582892486852: [1;31mFilósofo 36 is thinking 🤔
+[1;35m1582892486852: [1;31mFilósofo 36 has taken a fork 🍴
+[1;35m1582892486852: [1;31mFilósofo 36 has taken a fork 🍴
+[1;35m1582892486852: [1;31mFilósofo 36 is eating 🍔
+[1;35m1582892486852: [1;31mFilósofo 37 is thinking 🤔
+[1;35m1582892486852: [1;31mFilósofo 38 is thinking 🤔
+[1;35m1582892486852: [1;31mFilósofo 38 has taken a fork 🍴
+[1;35m1582892486852: [1;31mFilósofo 38 has taken a fork 🍴
+[1;35m1582892486852: [1;31mFilósofo 38 is eating 🍔
+[1;35m1582892486852: [1;31mFilósofo 39 is thinking 🤔
+[1;35m1582892486852: [1;31mFilósofo 40 is thinking 🤔
+[1;35m1582892486852: [1;31mFilósofo 40 has taken a fork 🍴
+[1;35m1582892486852: [1;31mFilósofo 40 has taken a fork 🍴
+[1;35m1582892486852: [1;31mFilósofo 40 is eating 🍔
+[1;35m1582892486852: [1;31mFilósofo 41 is thinking 🤔
+[1;35m1582892486852: [1;31mFilósofo 42 is thinking 🤔
+[1;35m1582892486852: [1;31mFilósofo 42 has taken a fork 🍴
+[1;35m1582892486852: [1;31mFilósofo 42 has taken a fork 🍴
+[1;35m1582892486852: [1;31mFilósofo 42 is eating 🍔
+[1;35m1582892486852: [1;31mFilósofo 43 is thinking 🤔
+[1;35m1582892486852: [1;31mFilósofo 44 is thinking 🤔
+[1;35m1582892486852: [1;31mFilósofo 44 has taken a fork 🍴
+[1;35m1582892486852: [1;31mFilósofo 44 has taken a fork 🍴
+[1;35m1582892486852: [1;31mFilósofo 44 is eating 🍔
+[1;35m1582892486852: [1;31mFilósofo 45 is thinking 🤔
+[1;35m1582892486852: [1;31mFilósofo 46 is thinking 🤔
+[1;35m1582892486852: [1;31mFilósofo 46 has taken a fork 🍴
+[1;35m1582892486852: [1;31mFilósofo 46 has taken a fork 🍴
+[1;35m1582892486852: [1;31mFilósofo 46 is eating 🍔
+[1;35m1582892486852: [1;31mFilósofo 47 is thinking 🤔
+[1;35m1582892486852: [1;31mFilósofo 48 is thinking 🤔
+[1;35m1582892486853: [1;31mFilósofo 48 has taken a fork 🍴
+[1;35m1582892486853: [1;31mFilósofo 48 has taken a fork 🍴
+[1;35m1582892486853: [1;31mFilósofo 48 is eating 🍔
+[1;35m1582892486853: [1;31mFilósofo 49 is thinking 🤔
+[1;35m1582892486853: [1;31mFilósofo 50 is thinking 🤔
+[1;35m1582892486853: [1;31mFilósofo 50 has taken a fork 🍴
+[1;35m1582892486853: [1;31mFilósofo 50 has taken a fork 🍴
+[1;35m1582892486853: [1;31mFilósofo 50 is eating 🍔
+[1;35m1582892486853: [1;31mFilósofo 51 is thinking 🤔
+[1;35m1582892486853: [1;31mFilósofo 52 is thinking 🤔
+[1;35m1582892486853: [1;31mFilósofo 52 has taken a fork 🍴
+[1;35m1582892486853: [1;31mFilósofo 52 has taken a fork 🍴
+[1;35m1582892486853: [1;31mFilósofo 52 is eating 🍔
+[1;35m1582892486853: [1;31mFilósofo 53 is thinking 🤔
+[1;35m1582892486853: [1;31mFilósofo 54 is thinking 🤔
+[1;35m1582892486853: [1;31mFilósofo 54 has taken a fork 🍴
+[1;35m1582892486853: [1;31mFilósofo 54 has taken a fork 🍴
+[1;35m1582892486853: [1;31mFilósofo 54 is eating 🍔
+[1;35m1582892486853: [1;31mFilósofo 55 is thinking 🤔
+[1;35m1582892486853: [1;31mFilósofo 56 is thinking 🤔
+[1;35m1582892486853: [1;31mFilósofo 56 has taken a fork 🍴
+[1;35m1582892486853: [1;31mFilósofo 56 has taken a fork 🍴
+[1;35m1582892486853: [1;31mFilósofo 56 is eating 🍔
+[1;35m1582892486853: [1;31mFilósofo 57 is thinking 🤔
+[1;35m1582892486853: [1;31mFilósofo 58 is thinking 🤔
+[1;35m1582892486853: [1;31mFilósofo 58 has taken a fork 🍴
+[1;35m1582892486853: [1;31mFilósofo 58 has taken a fork 🍴
+[1;35m1582892486853: [1;31mFilósofo 58 is eating 🍔
+[1;35m1582892486853: [1;31mFilósofo 59 is thinking 🤔
+[1;35m1582892486853: [1;31mFilósofo 60 is thinking 🤔
+[1;35m1582892486853: [1;31mFilósofo 60 has taken a fork 🍴
+[1;35m1582892486853: [1;31mFilósofo 60 has taken a fork 🍴
+[1;35m1582892486853: [1;31mFilósofo 60 is eating 🍔
+[1;35m1582892486853: [1;31mFilósofo 61 is thinking 🤔
+[1;35m1582892486853: [1;31mFilósofo 62 is thinking 🤔
+[1;35m1582892486853: [1;31mFilósofo 62 has taken a fork 🍴
+[1;35m1582892486853: [1;31mFilósofo 62 has taken a fork 🍴
+[1;35m1582892486853: [1;31mFilósofo 62 is eating 🍔
+[1;35m1582892486853: [1;31mFilósofo 63 is thinking 🤔
+[1;35m1582892486853: [1;31mFilósofo 64 is thinking 🤔
+[1;35m1582892486853: [1;31mFilósofo 64 has taken a fork 🍴
+[1;35m1582892486853: [1;31mFilósofo 64 has taken a fork 🍴
+[1;35m1582892486853: [1;31mFilósofo 64 is eating 🍔
+[1;35m1582892486853: [1;31mFilósofo 65 is thinking 🤔
+[1;35m1582892486853: [1;31mFilósofo 66 is thinking 🤔
+[1;35m1582892486853: [1;31mFilósofo 66 has taken a fork 🍴
+[1;35m1582892486853: [1;31mFilósofo 66 has taken a fork 🍴
+[1;35m1582892486853: [1;31mFilósofo 66 is eating 🍔
+[1;35m1582892486853: [1;31mFilósofo 67 is thinking 🤔
+[1;35m1582892486853: [1;31mFilósofo 68 is thinking 🤔
+[1;35m1582892486853: [1;31mFilósofo 68 has taken a fork 🍴
+[1;35m1582892486853: [1;31mFilósofo 68 has taken a fork 🍴
+[1;35m1582892486853: [1;31mFilósofo 68 is eating 🍔
+[1;35m1582892486853: [1;31mFilósofo 69 is thinking 🤔
+[1;35m1582892486853: [1;31mFilósofo 70 is thinking 🤔
+[1;35m1582892486853: [1;31mFilósofo 70 has taken a fork 🍴
+[1;35m1582892486853: [1;31mFilósofo 70 has taken a fork 🍴
+[1;35m1582892486853: [1;31mFilósofo 70 is eating 🍔
+[1;35m1582892486853: [1;31mFilósofo 71 is thinking 🤔
+[1;35m1582892486853: [1;31mFilósofo 72 is thinking 🤔
+[1;35m1582892486853: [1;31mFilósofo 72 has taken a fork 🍴
+[1;35m1582892486853: [1;31mFilósofo 72 has taken a fork 🍴
+[1;35m1582892486853: [1;31mFilósofo 72 is eating 🍔
+[1;35m1582892486853: [1;31mFilósofo 73 is thinking 🤔
+[1;35m1582892486853: [1;31mFilósofo 74 is thinking 🤔
+[1;35m1582892486853: [1;31mFilósofo 74 has taken a fork 🍴
+[1;35m1582892486853: [1;31mFilósofo 74 has taken a fork 🍴
+[1;35m1582892486853: [1;31mFilósofo 74 is eating 🍔
+[1;35m1582892486853: [1;31mFilósofo 75 is thinking 🤔
+[1;35m1582892486853: [1;31mFilósofo 76 is thinking 🤔
+[1;35m1582892486853: [1;31mFilósofo 76 has taken a fork 🍴
+[1;35m1582892486853: [1;31mFilósofo 76 has taken a fork 🍴
+[1;35m1582892486853: [1;31mFilósofo 76 is eating 🍔
+[1;35m1582892486854: [1;31mFilósofo 77 is thinking 🤔
+[1;35m1582892486854: [1;31mFilósofo 78 is thinking 🤔
+[1;35m1582892486854: [1;31mFilósofo 78 has taken a fork 🍴
+[1;35m1582892486854: [1;31mFilósofo 78 has taken a fork 🍴
+[1;35m1582892486854: [1;31mFilósofo 78 is eating 🍔
+[1;35m1582892486854: [1;31mFilósofo 79 is thinking 🤔
+[1;35m1582892486854: [1;31mFilósofo 80 is thinking 🤔
+[1;35m1582892486854: [1;31mFilósofo 80 has taken a fork 🍴
+[1;35m1582892486854: [1;31mFilósofo 80 has taken a fork 🍴
+[1;35m1582892486854: [1;31mFilósofo 80 is eating 🍔
+[1;35m1582892486854: [1;31mFilósofo 81 is thinking 🤔
+[1;35m1582892486854: [1;31mFilósofo 82 is thinking 🤔
+[1;35m1582892486854: [1;31mFilósofo 82 has taken a fork 🍴
+[1;35m1582892486854: [1;31mFilósofo 82 has taken a fork 🍴
+[1;35m1582892486854: [1;31mFilósofo 82 is eating 🍔
+[1;35m1582892486854: [1;31mFilósofo 83 is thinking 🤔
+[1;35m1582892486854: [1;31mFilósofo 84 is thinking 🤔
+[1;35m1582892486854: [1;31mFilósofo 84 has taken a fork 🍴
+[1;35m1582892486854: [1;31mFilósofo 84 has taken a fork 🍴
+[1;35m1582892486854: [1;31mFilósofo 84 is eating 🍔
+[1;35m1582892486854: [1;31mFilósofo 85 is thinking 🤔
+[1;35m1582892486854: [1;31mFilósofo 86 is thinking 🤔
+[1;35m1582892486854: [1;31mFilósofo 86 has taken a fork 🍴
+[1;35m1582892486854: [1;31mFilósofo 86 has taken a fork 🍴
+[1;35m1582892486854: [1;31mFilósofo 86 is eating 🍔
+[1;35m1582892486854: [1;31mFilósofo 87 is thinking 🤔
+[1;35m1582892486854: [1;31mFilósofo 88 is thinking 🤔
+[1;35m1582892486854: [1;31mFilósofo 88 has taken a fork 🍴
+[1;35m1582892486854: [1;31mFilósofo 88 has taken a fork 🍴
+[1;35m1582892486854: [1;31mFilósofo 88 is eating 🍔
+[1;35m1582892486854: [1;31mFilósofo 89 is thinking 🤔
+[1;35m1582892486854: [1;31mFilósofo 90 is thinking 🤔
+[1;35m1582892486854: [1;31mFilósofo 90 has taken a fork 🍴
+[1;35m1582892486854: [1;31mFilósofo 90 has taken a fork 🍴
+[1;35m1582892486854: [1;31mFilósofo 90 is eating 🍔
+[1;35m1582892486854: [1;31mFilósofo 91 is thinking 🤔
+[1;35m1582892486854: [1;31mFilósofo 92 is thinking 🤔
+[1;35m1582892486854: [1;31mFilósofo 92 has taken a fork 🍴
+[1;35m1582892486854: [1;31mFilósofo 92 has taken a fork 🍴
+[1;35m1582892486854: [1;31mFilósofo 92 is eating 🍔
+[1;35m1582892486854: [1;31mFilósofo 93 is thinking 🤔
+[1;35m1582892486854: [1;31mFilósofo 94 is thinking 🤔
+[1;35m1582892486854: [1;31mFilósofo 94 has taken a fork 🍴
+[1;35m1582892486854: [1;31mFilósofo 94 has taken a fork 🍴
+[1;35m1582892486854: [1;31mFilósofo 94 is eating 🍔
+[1;35m1582892486854: [1;31mFilósofo 95 is thinking 🤔
+[1;35m1582892486854: [1;31mFilósofo 96 is thinking 🤔
+[1;35m1582892486854: [1;31mFilósofo 96 has taken a fork 🍴
+[1;35m1582892486854: [1;31mFilósofo 96 has taken a fork 🍴
+[1;35m1582892486854: [1;31mFilósofo 96 is eating 🍔
+[1;35m1582892486854: [1;31mFilósofo 97 is thinking 🤔
+[1;35m1582892486854: [1;31mFilósofo 98 is thinking 🤔
+[1;35m1582892486854: [1;31mFilósofo 98 has taken a fork 🍴
+[1;35m1582892486854: [1;31mFilósofo 98 has taken a fork 🍴
+[1;35m1582892486854: [1;31mFilósofo 98 is eating 🍔
+[1;35m1582892486854: [1;31mFilósofo 99 is thinking 🤔
+[1;35m1582892486911: [1;31mFilósofo 0 is sleeping 🛌
+[1;35m1582892486911: [1;31mFilósofo 3 has taken a fork 🍴
+[1;35m1582892486911: [1;31mFilósofo 5 has taken a fork 🍴
+[1;35m1582892486911: [1;31mFilósofo 8 is sleeping 🛌
+[1;35m1582892486911: [1;31mFilósofo 2 is sleeping 🛌
+[1;35m1582892486911: [1;31mFilósofo 9 has taken a fork 🍴
+[1;35m1582892486911: [1;31mFilósofo 4 is sleeping 🛌
+[1;35m1582892486911: [1;31mFilósofo 6 is sleeping 🛌
+[1;35m1582892486911: [1;31mFilósofo 5 has taken a fork 🍴
+[1;35m1582892486911: [1;31mFilósofo 7 has taken a fork 🍴
+[1;35m1582892486911: [1;31mFilósofo 5 is eating 🍔
+[1;35m1582892486911: [1;31mFilósofo 1 has taken a fork 🍴
+[1;35m1582892486911: [1;31mFilósofo 7 has taken a fork 🍴
+[1;35m1582892486911: [1;31mFilósofo 10 is sleeping 🛌
+[1;35m1582892486911: [1;31mFilósofo 3 has taken a fork 🍴
+[1;35m1582892486911: [1;31mFilósofo 13 has taken a fork 🍴
+[1;35m1582892486911: [1;31mFilósofo 7 is eating 🍔
+[1;35m1582892486911: [1;31mFilósofo 3 is eating 🍔
+[1;35m1582892486911: [1;31mFilósofo 1 has taken a fork 🍴
+[1;35m1582892486911: [1;31mFilósofo 9 has taken a fork 🍴
+[1;35m1582892486911: [1;31mFilósofo 12 is sleeping 🛌
+[1;35m1582892486911: [1;31mFilósofo 9 is eating 🍔
+[1;35m1582892486911: [1;31mFilósofo 14 is sleeping 🛌
+[1;35m1582892486911: [1;31mFilósofo 11 has taken a fork 🍴
+[1;35m1582892486911: [1;31mFilósofo 13 has taken a fork 🍴
+[1;35m1582892486911: [1;31mFilósofo 11 has taken a fork 🍴
+[1;35m1582892486911: [1;31mFilósofo 13 is eating 🍔
+[1;35m1582892486911: [1;31mFilósofo 15 has taken a fork 🍴
+[1;35m1582892486911: [1;31mFilósofo 11 is eating 🍔
+[1;35m1582892486911: [1;31mFilósofo 1 is eating 🍔
+[1;35m1582892486912: [1;31mFilósofo 16 is sleeping 🛌
+[1;35m1582892486912: [1;31mFilósofo 18 is sleeping 🛌
+[1;35m1582892486912: [1;31mFilósofo 17 has taken a fork 🍴
+[1;35m1582892486912: [1;31mFilósofo 21 has taken a fork 🍴
+[1;35m1582892486912: [1;31mFilósofo 15 has taken a fork 🍴
+[1;35m1582892486912: [1;31mFilósofo 23 has taken a fork 🍴
+[1;35m1582892486912: [1;31mFilósofo 22 is sleeping 🛌
+[1;35m1582892486912: [1;31mFilósofo 20 is sleeping 🛌
+[1;35m1582892486912: [1;31mFilósofo 17 has taken a fork 🍴
+[1;35m1582892486912: [1;31mFilósofo 15 is eating 🍔
+[1;35m1582892486912: [1;31mFilósofo 17 is eating 🍔
+[1;35m1582892486912: [1;31mFilósofo 19 has taken a fork 🍴
+[1;35m1582892486912: [1;31mFilósofo 21 has taken a fork 🍴
+[1;35m1582892486912: [1;31mFilósofo 21 is eating 🍔
+[1;35m1582892486912: [1;31mFilósofo 24 is sleeping 🛌
+[1;35m1582892486912: [1;31mFilósofo 25 has taken a fork 🍴
+[1;35m1582892486912: [1;31mFilósofo 19 has taken a fork 🍴
+[1;35m1582892486912: [1;31mFilósofo 23 has taken a fork 🍴
+[1;35m1582892486912: [1;31mFilósofo 19 is eating 🍔
+[1;35m1582892486912: [1;31mFilósofo 23 is eating 🍔
+[1;35m1582892486912: [1;31mFilósofo 26 is sleeping 🛌
+[1;35m1582892486912: [1;31mFilósofo 28 is sleeping 🛌
+[1;35m1582892486912: [1;31mFilósofo 27 has taken a fork 🍴
+[1;35m1582892486912: [1;31mFilósofo 27 has taken a fork 🍴
+[1;35m1582892486912: [1;31mFilósofo 25 has taken a fork 🍴
+[1;35m1582892486912: [1;31mFilósofo 25 is eating 🍔
+[1;35m1582892486912: [1;31mFilósofo 27 is eating 🍔
+[1;35m1582892486912: [1;31mFilósofo 29 has taken a fork 🍴
+[1;35m1582892486912: [1;31mFilósofo 30 is sleeping 🛌
+[1;35m1582892486912: [1;31mFilósofo 31 has taken a fork 🍴
+[1;35m1582892486912: [1;31mFilósofo 32 is sleeping 🛌
+[1;35m1582892486912: [1;31mFilósofo 29 has taken a fork 🍴
+[1;35m1582892486912: [1;31mFilósofo 33 has taken a fork 🍴
+[1;35m1582892486912: [1;31mFilósofo 29 is eating 🍔
+[1;35m1582892486912: [1;31mFilósofo 31 has taken a fork 🍴
+[1;35m1582892486912: [1;31mFilósofo 31 is eating 🍔
+[1;35m1582892486912: [1;31mFilósofo 34 is sleeping 🛌
+[1;35m1582892486912: [1;31mFilósofo 36 is sleeping 🛌
+[1;35m1582892486912: [1;31mFilósofo 35 has taken a fork 🍴
+[1;35m1582892486912: [1;31mFilósofo 38 is sleeping 🛌
+[1;35m1582892486912: [1;31mFilósofo 35 has taken a fork 🍴
+[1;35m1582892486912: [1;31mFilósofo 41 has taken a fork 🍴
+[1;35m1582892486912: [1;31mFilósofo 35 is eating 🍔
+[1;35m1582892486912: [1;31mFilósofo 37 has taken a fork 🍴
+[1;35m1582892486912: [1;31mFilósofo 40 is sleeping 🛌
+[1;35m1582892486912: [1;31mFilósofo 42 is sleeping 🛌
+[1;35m1582892486912: [1;31mFilósofo 43 has taken a fork 🍴
+[1;35m1582892486912: [1;31mFilósofo 41 has taken a fork 🍴
+[1;35m1582892486912: [1;31mFilósofo 41 is eating 🍔
+[1;35m1582892486912: [1;31mFilósofo 39 has taken a fork 🍴
+[1;35m1582892486912: [1;31mFilósofo 37 has taken a fork 🍴
+[1;35m1582892486912: [1;31mFilósofo 33 has taken a fork 🍴
+[1;35m1582892486912: [1;31mFilósofo 39 has taken a fork 🍴
+[1;35m1582892486912: [1;31mFilósofo 33 is eating 🍔
+[1;35m1582892486912: [1;31mFilósofo 39 is eating 🍔
+[1;35m1582892486912: [1;31mFilósofo 37 is eating 🍔
+[1;35m1582892486912: [1;31mFilósofo 44 is sleeping 🛌
+[1;35m1582892486912: [1;31mFilósofo 45 has taken a fork 🍴
+[1;35m1582892486912: [1;31mFilósofo 43 has taken a fork 🍴
+[1;35m1582892486912: [1;31mFilósofo 43 is eating 🍔
+[1;35m1582892486913: [1;31mFilósofo 48 is sleeping 🛌
+[1;35m1582892486913: [1;31mFilósofo 50 is sleeping 🛌
+[1;35m1582892486913: [1;31mFilósofo 54 is sleeping 🛌
+[1;35m1582892486913: [1;31mFilósofo 47 has taken a fork 🍴
+[1;35m1582892486913: [1;31mFilósofo 52 is sleeping 🛌
+[1;35m1582892486913: [1;31mFilósofo 45 has taken a fork 🍴
+[1;35m1582892486913: [1;31mFilósofo 53 has taken a fork 🍴
+[1;35m1582892486913: [1;31mFilósofo 47 has taken a fork 🍴
+[1;35m1582892486913: [1;31mFilósofo 49 has taken a fork 🍴
+[1;35m1582892486913: [1;31mFilósofo 45 is eating 🍔
+[1;35m1582892486913: [1;31mFilósofo 47 is eating 🍔
+[1;35m1582892486913: [1;31mFilósofo 49 has taken a fork 🍴
+[1;35m1582892486913: [1;31mFilósofo 58 is sleeping 🛌
+[1;35m1582892486913: [1;31mFilósofo 49 is eating 🍔
+[1;35m1582892486913: [1;31mFilósofo 51 has taken a fork 🍴
+[1;35m1582892486913: [1;31mFilósofo 57 has taken a fork 🍴
+[1;35m1582892486913: [1;31mFilósofo 55 has taken a fork 🍴
+[1;35m1582892486913: [1;31mFilósofo 56 is sleeping 🛌
+[1;35m1582892486913: [1;31mFilósofo 55 has taken a fork 🍴
+[1;35m1582892486913: [1;31mFilósofo 53 has taken a fork 🍴
+[1;35m1582892486913: [1;31mFilósofo 46 is sleeping 🛌
+[1;35m1582892486913: [1;31mFilósofo 53 is eating 🍔
+[1;35m1582892486913: [1;31mFilósofo 55 is eating 🍔
+[1;35m1582892486913: [1;31mFilósofo 51 has taken a fork 🍴
+[1;35m1582892486913: [1;31mFilósofo 59 has taken a fork 🍴
+[1;35m1582892486913: [1;31mFilósofo 61 has taken a fork 🍴
+[1;35m1582892486913: [1;31mFilósofo 59 has taken a fork 🍴
+[1;35m1582892486913: [1;31mFilósofo 59 is eating 🍔
+[1;35m1582892486913: [1;31mFilósofo 57 has taken a fork 🍴
+[1;35m1582892486913: [1;31mFilósofo 51 is eating 🍔
+[1;35m1582892486913: [1;31mFilósofo 57 is eating 🍔
+[1;35m1582892486913: [1;31mFilósofo 60 is sleeping 🛌
+[1;35m1582892486913: [1;31mFilósofo 62 is sleeping 🛌
+[1;35m1582892486913: [1;31mFilósofo 63 has taken a fork 🍴
+[1;35m1582892486913: [1;31mFilósofo 61 has taken a fork 🍴
+[1;35m1582892486913: [1;31mFilósofo 61 is eating 🍔
+[1;35m1582892486913: [1;31mFilósofo 64 is sleeping 🛌
+[1;35m1582892486913: [1;31mFilósofo 65 has taken a fork 🍴
+[1;35m1582892486913: [1;31mFilósofo 63 has taken a fork 🍴
+[1;35m1582892486913: [1;31mFilósofo 63 is eating 🍔
+[1;35m1582892486913: [1;31mFilósofo 66 is sleeping 🛌
+[1;35m1582892486913: [1;31mFilósofo 65 has taken a fork 🍴
+[1;35m1582892486913: [1;31mFilósofo 65 is eating 🍔
+[1;35m1582892486913: [1;31mFilósofo 67 has taken a fork 🍴
+[1;35m1582892486913: [1;31mFilósofo 68 is sleeping 🛌
+[1;35m1582892486913: [1;31mFilósofo 69 has taken a fork 🍴
+[1;35m1582892486913: [1;31mFilósofo 67 has taken a fork 🍴
+[1;35m1582892486913: [1;31mFilósofo 67 is eating 🍔
+[1;35m1582892486913: [1;31mFilósofo 70 is sleeping 🛌
+[1;35m1582892486913: [1;31mFilósofo 71 has taken a fork 🍴
+[1;35m1582892486913: [1;31mFilósofo 69 has taken a fork 🍴
+[1;35m1582892486913: [1;31mFilósofo 69 is eating 🍔
+[1;35m1582892486915: [1;31mFilósofo 72 is sleeping 🛌
+[1;35m1582892486915: [1;31mFilósofo 74 is sleeping 🛌
+[1;35m1582892486915: [1;31mFilósofo 78 is sleeping 🛌
+[1;35m1582892486915: [1;31mFilósofo 86 is sleeping 🛌
+[1;35m1582892486915: [1;31mFilósofo 90 is sleeping 🛌
+[1;35m1582892486915: [1;31mFilósofo 96 is sleeping 🛌
+[1;35m1582892486915: [1;31mFilósofo 77 has taken a fork 🍴
+[1;35m1582892486915: [1;31mFilósofo 71 has taken a fork 🍴
+[1;35m1582892486915: [1;31mFilósofo 83 has taken a fork 🍴
+[1;35m1582892486915: [1;31mFilósofo 85 has taken a fork 🍴
+[1;35m1582892486915: [1;31mFilósofo 83 has taken a fork 🍴
+[1;35m1582892486915: [1;31mFilósofo 87 has taken a fork 🍴
+[1;35m1582892486915: [1;31mFilósofo 85 has taken a fork 🍴
+[1;35m1582892486915: [1;31mFilósofo 92 is sleeping 🛌
+[1;35m1582892486915: [1;31mFilósofo 99 has taken a fork 🍴
+[1;35m1582892486915: [1;31mFilósofo 88 is sleeping 🛌
+[1;35m1582892486915: [1;31mFilósofo 85 is eating 🍔
+[1;35m1582892486915: [1;31mFilósofo 77 has taken a fork 🍴
+[1;35m1582892486915: [1;31mFilósofo 71 is eating 🍔
+[1;35m1582892486915: [1;31mFilósofo 87 has taken a fork 🍴
+[1;35m1582892486915: [1;31mFilósofo 79 has taken a fork 🍴
+[1;35m1582892486915: [1;31mFilósofo 98 is sleeping 🛌
+[1;35m1582892486915: [1;31mFilósofo 79 has taken a fork 🍴
+[1;35m1582892486915: [1;31mFilósofo 73 has taken a fork 🍴
+[1;35m1582892486915: [1;31mFilósofo 83 is eating 🍔
+[1;35m1582892486915: [1;31mFilósofo 99 has taken a fork 🍴
+[1;35m1582892486915: [1;31mFilósofo 84 is sleeping 🛌
+[1;35m1582892486915: [1;31mFilósofo 89 has taken a fork 🍴
+[1;35m1582892486915: [1;31mFilósofo 99 is eating 🍔
+[1;35m1582892486915: [1;31mFilósofo 79 is eating 🍔
+[1;35m1582892486915: [1;31mFilósofo 76 is sleeping 🛌
+[1;35m1582892486915: [1;31mFilósofo 95 has taken a fork 🍴
+[1;35m1582892486915: [1;31mFilósofo 77 is eating 🍔
+[1;35m1582892486915: [1;31mFilósofo 82 is sleeping 🛌
+[1;35m1582892486915: [1;31mFilósofo 94 is sleeping 🛌
+[1;35m1582892486915: [1;31mFilósofo 91 has taken a fork 🍴
+[1;35m1582892486915: [1;31mFilósofo 80 is sleeping 🛌
+[1;35m1582892486915: [1;31mFilósofo 89 has taken a fork 🍴
+[1;35m1582892486915: [1;31mFilósofo 87 is eating 🍔
+[1;35m1582892486915: [1;31mFilósofo 73 has taken a fork 🍴
+[1;35m1582892486915: [1;31mFilósofo 95 has taken a fork 🍴
+[1;35m1582892486915: [1;31mFilósofo 93 has taken a fork 🍴
+[1;35m1582892486915: [1;31mFilósofo 75 has taken a fork 🍴
+[1;35m1582892486915: [1;31mFilósofo 95 is eating 🍔
+[1;35m1582892486915: [1;31mFilósofo 89 is eating 🍔
+[1;35m1582892486915: [1;31mFilósofo 97 has taken a fork 🍴
+[1;35m1582892486915: [1;31mFilósofo 93 has taken a fork 🍴
+[1;35m1582892486915: [1;31mFilósofo 91 has taken a fork 🍴
+[1;35m1582892486915: [1;31mFilósofo 81 has taken a fork 🍴
+[1;35m1582892486915: [1;31mFilósofo 75 has taken a fork 🍴
+[1;35m1582892486915: [1;31mFilósofo 97 has taken a fork 🍴
+[1;35m1582892486915: [1;31mFilósofo 91 is eating 🍔
+[1;35m1582892486915: [1;31mFilósofo 81 has taken a fork 🍴
+[1;35m1582892486915: [1;31mFilósofo 73 is eating 🍔
+[1;35m1582892486915: [1;31mFilósofo 97 is eating 🍔
+[1;35m1582892486915: [1;31mFilósofo 75 is eating 🍔
+[1;35m1582892486915: [1;31mFilósofo 81 is eating 🍔
+[1;35m1582892486915: [1;31mFilósofo 93 is eating 🍔
+[1;35m1582892486972: [1;31mFilósofo 6 is DEATH 👻
+[1;35m1582892486972: [1;31mFilósofo 10 is DEATH 👻
+🎮 GAME OVER 🎮 
