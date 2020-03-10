@@ -6,7 +6,7 @@
 /*   By: iromero- <iromero-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 18:51:48 by iromero-          #+#    #+#             */
-/*   Updated: 2020/03/09 13:10:50 by iromero-         ###   ########.fr       */
+/*   Updated: 2020/03/10 15:45:51 by iromero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,30 +47,6 @@ static void *monitor(void *philo_v)
 		usleep(1000);
 	}
 }
-/*static void *monitor(void *philo_v)
-{
-	t_philo		*philo;
-
-	philo = (t_philo*)philo_v;
-	while (1)
-	{
-		if (sem_wait(philo->mutex) != 0)
-			return ((void*)0);
-		if (!philo->is_eating && get_time() > philo->limit)
-		{
-			philo->state->died = 1;
-			ft_writeme_baby(philo, " is DEATH 👻\n");
-			if (sem_post(philo->mutex))
-				return ((void*)0);
-			if (sem_post(philo->state->died))
-				return ((void*)0);
-			return ((void*)0);
-		}
-		if (sem_post(philo->mutex))
-			return ((void*)0);
-	}
-	return ((void*)0);
-}*/
 
 void	*ft_vida(t_philo *phi)
 {

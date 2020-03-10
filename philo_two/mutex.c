@@ -6,7 +6,7 @@
 /*   By: iromero- <iromero-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 18:51:48 by iromero-          #+#    #+#             */
-/*   Updated: 2020/03/09 13:10:50 by iromero-         ###   ########.fr       */
+/*   Updated: 2020/03/10 15:45:23 by iromero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,8 @@ static void *monitor(void *philo_v)
 	philo = (t_philo*)philo_v;
 	while (1)
 	{
-		pthread_mutex_lock(&philo->monitor);
+		if (sem_wait(philo->monitor) != 0)
+			return ((void*)0);
 		if ((get_time() - philo->last_eat) > philo->state->time_to_die)
 		{
 			if (philo->state->died == 0)
@@ -40,37 +41,13 @@ static void *monitor(void *philo_v)
 				philo->state->died = 1;
 				ft_writeme_baby2(philo, " is DEATH 👻\n");
 			}
-			pthread_mutex_unlock(&philo->monitor);
+			sem_post(philo->monitor);
 			return ((void*)0);
 		}
-		pthread_mutex_unlock(&philo->monitor);
-		usleep(1000);
-	}
-}
-/*static void *monitor(void *philo_v)
-{
-	t_philo		*philo;
-
-	philo = (t_philo*)philo_v;
-	while (1)
-	{
-		if (sem_wait(philo->mutex) != 0)
-			return ((void*)0);
-		if (!philo->is_eating && get_time() > philo->limit)
-		{
-			philo->state->died = 1;
-			ft_writeme_baby(philo, " is DEATH 👻\n");
-			if (sem_post(philo->mutex))
-				return ((void*)0);
-			if (sem_post(philo->state->died))
-				return ((void*)0);
-			return ((void*)0);
-		}
-		if (sem_post(philo->mutex))
-			return ((void*)0);
+		sem_post(philo->monitor);
 	}
 	return ((void*)0);
-}*/
+}
 
 void	*ft_vida(t_philo *phi)
 {
@@ -101,15 +78,20 @@ void	init_thread(t_state *std)
 {
 	pthread_t	tid[std->amount];
 	pthread_t	tid2;
+	char		semaphore[250];
 	int			i;
 
 	start_hilos(std);
-	i = 0;
-	while (i < std->amount)
-		pthread_mutex_init(&std->forks_m[i++], NULL);
 	i = -1;
 	while (++i < std->amount)
 	{
+		make_semaphore_name("semaforotenedor", (char*)semaphore, i);
+		std->forks_m[i] = ft_sem_open(semaphore, i);
+	}
+	i = -1;
+	while (++i < std->amount)
+	{
+	//	sem_init(&std->philos[i].monitor, NULL);
 		std->philos[i].last_eat = get_time();
 		pthread_create(&tid2, NULL, &monitor, &std->philos[i]);
 		pthread_create(&tid[i], NULL, (void*)&ft_vida, &std->philos[i]);
@@ -117,7 +99,11 @@ void	init_thread(t_state *std)
 	}
 	i = 0;
 	while (i < std->amount)
+	{
+		sem_close(&std->forks_m[i]);
+		sem_close(std->philos[i].monitor);
 		pthread_join(tid[i++], NULL);
+	}
 	pthread_join(tid[1], NULL);
 }
 

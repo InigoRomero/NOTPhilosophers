@@ -6,7 +6,7 @@
 /*   By: iromero- <iromero-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 19:12:59 by iromero-          #+#    #+#             */
-/*   Updated: 2020/03/09 13:09:11 by iromero-         ###   ########.fr       */
+/*   Updated: 2020/03/10 15:49:15 by iromero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <pthread.h>
 # include <sys/time.h>
 # include <stdio.h>
+# include <semaphore.h>
 
 typedef struct		s_philo
 {
@@ -29,8 +30,8 @@ typedef struct		s_philo
 	int				rfork;
 	int				eat_count;
 	struct s_state	*state;
-	pthread_mutex_t	*forks_m;
-	pthread_mutex_t	monitor;
+	sem_t			*forks_m;
+	sem_t			*monitor;
 }					t_philo;
 
 typedef struct		s_state
@@ -43,8 +44,8 @@ typedef struct		s_state
 	int				must_eat_count;
 	int				died;
 	t_philo			*philos;
-	pthread_mutex_t	*forks_m;
-	pthread_mutex_t	mutex;
+	sem_t			*forks_m;
+	sem_t			*mutex;
 	int				n_forks;
 }					t_state;
 
@@ -61,4 +62,7 @@ void 				phi_sleep(t_philo *phi);
 void 				phi_think(t_philo *phi);
 void				start_hilos(t_state *std);
 void				ft_writeme_baby2(t_philo *phi, char *str);
+sem_t				*ft_sem_open(char const *name, int value);
+char				*make_semaphore_name(char const *base, char *buffer, int position);
+int					ft_strcpy(char *dst, const char *src);
 #endif

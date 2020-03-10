@@ -6,7 +6,7 @@
 /*   By: iromero- <iromero-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 20:19:05 by iromero-          #+#    #+#             */
-/*   Updated: 2020/03/09 13:10:16 by iromero-         ###   ########.fr       */
+/*   Updated: 2020/03/10 14:06:15 by iromero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,22 +32,24 @@ int		init(t_state *std, int argc, char **argv)
 void	start_hilos(t_state *std)
 {
 	int i;
+	char	semaphore[250];
 
 	i = 0;
 	if (!(std->philos =
 		(t_philo*)malloc(sizeof(*(std->philos)) * std->amount)))
 		return ;
-	if (!(std->forks_m = (pthread_mutex_t*)
+	if (!(std->forks_m = (sem_t*)
 		malloc(sizeof(*(std->forks_m)) * std->amount)))
 		return ;
 	std->died = 0;
-	pthread_mutex_init(&std->mutex, NULL);
+	std->mutex = ft_sem_open("mutex", 0);
 	while (i < std->amount)
 	{
 		std->philos[i].is_eating = 0;
 		std->philos[i].position = i;
+		make_semaphore_name("semaforoeat", (char*)semaphore, i);
+		std->philos[i].monitor = ft_sem_open(semaphore, i);
 		//pthread_mutex_init(&std->philos[i].mutex, NULL);
-		pthread_mutex_init(&std->philos[i].monitor, NULL);
 		std->philos[i].lfork = i;
 		std->philos[i].eat_count = 0;
 		std->philos[i].rfork = (i + 1) % std->amount;

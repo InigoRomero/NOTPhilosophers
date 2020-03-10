@@ -6,7 +6,7 @@
 /*   By: iromero- <iromero-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/26 11:51:05 by iromero-          #+#    #+#             */
-/*   Updated: 2020/02/27 16:05:00 by iromero-         ###   ########.fr       */
+/*   Updated: 2020/03/10 15:49:02 by iromero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,4 +67,18 @@ char			*ft_itoa(uint64_t n)
 	if (!(num = (char *)malloc(sizeof(char) * (leng + 1))))
 		return (NULL);
 	return (num = inttochar(n, num, leng));
+}
+
+int				ft_strcpy(char *dst, const char *src)
+{
+	int	i;
+
+	i = 0;
+	while (src[i])
+	{
+		dst[i] = src[i];
+		i++;
+	}
+	dst[i] = 0;
+	return (i);
 }
