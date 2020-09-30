@@ -6,11 +6,11 @@
 /*   By: iromero- <iromero-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/10 13:55:41 by iromero-          #+#    #+#             */
-/*   Updated: 2020/03/10 15:53:01 by iromero-         ###   ########.fr       */
+/*   Updated: 2020/09/30 17:11:14 by iromero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
- # include "philosophers.h"
+#include "philosophers.h"
  
 sem_t	*ft_sem_open(char const *name, int value)
 {

@@ -6,7 +6,7 @@
 /*   By: iromero- <iromero-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/27 15:55:37 by iromero-          #+#    #+#             */
-/*   Updated: 2020/03/10 12:31:45 by iromero-         ###   ########.fr       */
+/*   Updated: 2020/09/30 19:31:31 by iromero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,8 @@ void	phi_think(t_philo *phi)
 		ft_writeme_baby(phi, " is DEATH 👻\n");
 		phi->state->died = 1;
 	}
-	else */if (phi->state->died == 0)
+	else */
+	if (phi->state->died == 0)
 	{
 		ft_writeme_baby(phi, " is thinking 🤔\n");
 		phi->is_eating = 0;

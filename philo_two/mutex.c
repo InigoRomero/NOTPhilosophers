@@ -6,7 +6,7 @@
 /*   By: iromero- <iromero-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 18:51:48 by iromero-          #+#    #+#             */
-/*   Updated: 2020/03/10 15:45:23 by iromero-         ###   ########.fr       */
+/*   Updated: 2020/09/30 19:30:59 by iromero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,7 @@ void	*ft_vida(t_philo *phi)
 		return ((void*)1);
 	while (1)
 	{
+		
 		if (phi->state->died || (phi->state->must_eat_count
 			&& phi->eat_count == phi->state->must_eat_count))
 			break ;
@@ -70,6 +71,7 @@ void	*ft_vida(t_philo *phi)
 		if (!(ft_loop(phi)) || (phi->state->must_eat_count
 			&& phi->eat_count == phi->state->must_eat_count))
 			break ;
+					
 	}
 	return ((void*)0);
 }
@@ -83,12 +85,12 @@ void	init_thread(t_state *std)
 
 	start_hilos(std);
 	i = -1;
-	while (++i < std->amount)
+	/*while (++i < std->amount)
 	{
 		make_semaphore_name("semaforotenedor", (char*)semaphore, i);
 		std->forks_m[i] = ft_sem_open(semaphore, i);
 	}
-	i = -1;
+	i = -1;*/
 	while (++i < std->amount)
 	{
 	//	sem_init(&std->philos[i].monitor, NULL);
