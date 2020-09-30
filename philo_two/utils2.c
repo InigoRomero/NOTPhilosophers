@@ -6,7 +6,7 @@
 /*   By: iromero- <iromero-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/27 16:04:26 by iromero-          #+#    #+#             */
-/*   Updated: 2020/09/30 20:14:56 by iromero-         ###   ########.fr       */
+/*   Updated: 2020/09/30 20:28:33 by iromero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,8 +80,8 @@ void	ft_writeme_baby2(t_philo *phi, char *str)
 		temp2 = ft_strjoin(temp, str);
 		sem_wait(phi->state->mutex);
 		write(1, temp2, ft_strlen(temp2));
+		free(temp);
 		sem_post(phi->state->mutex);
-				free(temp);
 	}
 }
 

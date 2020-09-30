@@ -6,7 +6,7 @@
 /*   By: iromero- <iromero-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 18:51:48 by iromero-          #+#    #+#             */
-/*   Updated: 2020/09/30 19:30:59 by iromero-         ###   ########.fr       */
+/*   Updated: 2020/09/30 20:29:43 by iromero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,7 +97,7 @@ void	init_thread(t_state *std)
 		std->philos[i].last_eat = get_time();
 		pthread_create(&tid2, NULL, &monitor, &std->philos[i]);
 		pthread_create(&tid[i], NULL, (void*)&ft_vida, &std->philos[i]);
-		usleep(20);
+		usleep(2000);
 	}
 	i = 0;
 	while (i < std->amount)
