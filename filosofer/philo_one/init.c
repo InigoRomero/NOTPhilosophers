@@ -12,7 +12,16 @@
 
 #include "philosophers.h"
 
-int		init(t_state *std, int argc, char **argv)
+static int	init_semaphores(t_state *state)
+{
+	if ((state->forks_m = ft_sem_open(SEMAPHORE_FORK, state->amount)) < 0
+		|| (state->write_m = ft_sem_open(SEMAPHORE_WRITE, 1)) < 0
+		|| (state->somebody_dead_m = ft_sem_open(SEMAPHORE_DEAD, 0)) < 0)
+		return (1);
+	return (0);
+}
+
+int			init(t_state *std, int argc, char **argv)
 {
 	std->amount = ft_atoi(argv[1]);
 	std->time_to_die = ft_atoi(argv[2]);

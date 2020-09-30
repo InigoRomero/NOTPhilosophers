@@ -23,7 +23,6 @@ typedef struct		s_philo
 {
 	int				position;
 	int				is_eating;
-	uint64_t		limit;
 	uint64_t		last_eat;
 	int				lfork;
 	int				rfork;

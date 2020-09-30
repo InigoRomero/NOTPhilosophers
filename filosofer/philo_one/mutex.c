@@ -12,6 +12,27 @@
 
 #include "philosophers.h"
 
+static void	*monitor(void *philo_v)
+{
+	t_philo		*philo;
+
+	philo = (t_philo*)philo_v;
+	while (1)
+	{
+		pthread_mutex_lock(&philo->mutex);
+		if (!philo->is_eating && (get_time() - philo->last_eat) > philo->state->time_to_die)
+		{
+			philo->state->died = 1;
+			ft_writeme_baby(philo, " is DEATH 👻\n");
+			pthread_mutex_unlock(&philo->mutex);
+			pthread_mutex_unlock(&philo->state->somebody_dead_m);
+			return ((void*)0);
+		}
+		pthread_mutex_unlock(&philo->mutex);
+		usleep(1000);
+	}
+}
+
 int		ft_loop(t_philo *phi)
 {
 	if (phi->state->died)
@@ -28,8 +49,13 @@ int		ft_loop(t_philo *phi)
 void	*ft_vida(t_philo *phi)
 {
 	int i;
+	pthread_t	tid;
 
 	i = 0;
+	phi->last_eat = get_time();
+	if (pthread_create(&tid, NULL, &monitor, phi) != 0)
+		return ((void*)1);
+	pthread_detach(tid);
 	while (1)
 	{
 		phi_think(phi);
@@ -54,9 +80,9 @@ void	init_thread(t_state *std)
 	i = 0;
 	while (i < std->amount)
 	{
-		std->philos[i].last_eat = get_time();
+		//std->philos[i].last_eat = get_time();
 		err = pthread_create(&tid[i], NULL, (void*)&ft_vida, &std->philos[i]);
-		usleep(5);
+		usleep(20);
 		i++;
 	}
 	i = 0;
