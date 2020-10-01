@@ -6,7 +6,7 @@
 /*   By: iromero- <iromero-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 20:19:05 by iromero-          #+#    #+#             */
-/*   Updated: 2020/10/01 17:17:04 by iromero-         ###   ########.fr       */
+/*   Updated: 2020/10/01 18:49:42 by iromero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int		init(t_state *std, int argc, char **argv)
 
 void	start_hilos(t_state *std)
 {
-	int i;
+	int		i;
 	char	semaphore[250];
 
 	i = 0;
@@ -41,7 +41,6 @@ void	start_hilos(t_state *std)
 	if (!(std->forks_m = (sem_t*)
 		malloc(sizeof(*(std->forks_m)) * std->amount)))
 		return ;
-	std->died = 0;
 	std->mutex = ft_sem_open("mutex", 1);
 	while (i < std->amount)
 	{

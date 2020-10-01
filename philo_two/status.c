@@ -6,7 +6,7 @@
 /*   By: iromero- <iromero-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/27 15:55:37 by iromero-          #+#    #+#             */
-/*   Updated: 2020/10/01 18:35:33 by iromero-         ###   ########.fr       */
+/*   Updated: 2020/10/01 19:07:35 by iromero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,6 @@ void	phi_eating(t_philo *phi)
 		sem_post(&phi->forks_m[phi->lfork]);
 		phi->is_eating = 0;
 	}
-
 }
 
 void	phi_sleep(t_philo *phi)

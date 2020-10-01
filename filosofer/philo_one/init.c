@@ -6,20 +6,11 @@
 /*   By: iromero- <iromero-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 20:19:05 by iromero-          #+#    #+#             */
-/*   Updated: 2020/02/27 16:09:04 by iromero-         ###   ########.fr       */
+/*   Updated: 2020/10/01 17:18:44 by iromero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philosophers.h"
-
-static int	init_semaphores(t_state *state)
-{
-	if ((state->forks_m = ft_sem_open(SEMAPHORE_FORK, state->amount)) < 0
-		|| (state->write_m = ft_sem_open(SEMAPHORE_WRITE, 1)) < 0
-		|| (state->somebody_dead_m = ft_sem_open(SEMAPHORE_DEAD, 0)) < 0)
-		return (1);
-	return (0);
-}
 
 int			init(t_state *std, int argc, char **argv)
 {
