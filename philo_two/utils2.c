@@ -6,7 +6,7 @@
 /*   By: iromero- <iromero-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/27 16:04:26 by iromero-          #+#    #+#             */
-/*   Updated: 2020/09/30 20:28:33 by iromero-         ###   ########.fr       */
+/*   Updated: 2020/10/01 16:57:23 by iromero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,17 +47,18 @@ void	ft_writeme_baby(t_philo *phi, char *str)
 
 	if (phi->state->died == 0)
 	{
-		//sem_wait(phi->state->mutex);
 		time = ft_itoa(get_time() - phi->state->init);
 		position = ft_itoa(phi->position);
-		write(1, "\e[1;35m", ft_strlen("\e[1;35m"));
-		write(1, time, ft_strlen(time));
-		write(1, ": \e[1;31mFilósofo ", ft_strlen(": \e[1;31mFilósofo "));
-		write(1, position, ft_strlen(position));
-		write(1, str, ft_strlen(str));
-		free(time);
-		free(position);
-		//sem_post(phi->state->mutex);
+		temp = ft_strjoin("\e[1;35m", time);
+		temp2 = ft_strjoin(temp, ": \e[1;31mFilósofo ");
+		free(temp);
+		temp = ft_strjoin(temp2, position);
+		free(temp2);
+		temp2 = ft_strjoin(temp, str);
+		sem_wait(phi->state->mutex);
+		write(1, temp2, ft_strlen(temp2));
+		free(temp);
+		sem_post(phi->state->mutex);
 	}
 }
 

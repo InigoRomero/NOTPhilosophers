@@ -6,7 +6,7 @@
 /*   By: iromero- <iromero-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 20:19:05 by iromero-          #+#    #+#             */
-/*   Updated: 2020/09/30 19:55:43 by iromero-         ###   ########.fr       */
+/*   Updated: 2020/10/01 17:17:04 by iromero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,14 +42,13 @@ void	start_hilos(t_state *std)
 		malloc(sizeof(*(std->forks_m)) * std->amount)))
 		return ;
 	std->died = 0;
-	std->mutex = ft_sem_open("mutex", 0);
+	std->mutex = ft_sem_open("mutex", 1);
 	while (i < std->amount)
 	{
 		std->philos[i].is_eating = 0;
 		std->philos[i].position = i;
 		make_semaphore_name("semaforoeat", (char*)semaphore, i);
 		std->philos[i].monitor = ft_sem_open(semaphore, i);
-		//pthread_mutex_init(&std->philos[i].mutex, NULL);
 		std->philos[i].lfork = i;
 		std->philos[i].eat_count = 0;
 		std->philos[i].rfork = (i + 1) % std->amount;

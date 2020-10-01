@@ -6,7 +6,7 @@
 /*   By: iromero- <iromero-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 19:12:59 by iromero-          #+#    #+#             */
-/*   Updated: 2020/09/30 16:59:37 by iromero-         ###   ########.fr       */
+/*   Updated: 2020/10/01 17:21:07 by iromero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,4 +65,5 @@ void				ft_writeme_baby2(t_philo *phi, char *str);
 sem_t				*ft_sem_open(char const *name, int value);
 char				*make_semaphore_name(char const *base, char *buffer, int position);
 int					ft_strcpy(char *dst, const char *src);
+int					clear_state(t_state *state);
 #endif

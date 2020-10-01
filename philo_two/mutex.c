@@ -6,7 +6,7 @@
 /*   By: iromero- <iromero-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 18:51:48 by iromero-          #+#    #+#             */
-/*   Updated: 2020/09/30 20:29:43 by iromero-         ###   ########.fr       */
+/*   Updated: 2020/10/01 18:36:53 by iromero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,8 +44,12 @@ static void *monitor(void *philo_v)
 			sem_post(philo->monitor);
 			return ((void*)0);
 		}
+		if (philo->state->died || (philo->state->must_eat_count
+			&& philo->eat_count == philo->state->must_eat_count))
+			break ;
 		sem_post(philo->monitor);
 	}
+	sem_close(philo->monitor);
 	return ((void*)0);
 }
 
@@ -60,7 +64,6 @@ void	*ft_vida(t_philo *phi)
 		return ((void*)1);
 	while (1)
 	{
-		
 		if (phi->state->died || (phi->state->must_eat_count
 			&& phi->eat_count == phi->state->must_eat_count))
 			break ;
@@ -85,27 +88,17 @@ void	init_thread(t_state *std)
 
 	start_hilos(std);
 	i = -1;
-	/*while (++i < std->amount)
-	{
-		make_semaphore_name("semaforotenedor", (char*)semaphore, i);
-		std->forks_m[i] = ft_sem_open(semaphore, i);
-	}
-	i = -1;*/
 	while (++i < std->amount)
 	{
-	//	sem_init(&std->philos[i].monitor, NULL);
 		std->philos[i].last_eat = get_time();
 		pthread_create(&tid2, NULL, &monitor, &std->philos[i]);
 		pthread_create(&tid[i], NULL, (void*)&ft_vida, &std->philos[i]);
-		usleep(2000);
+		usleep(10);
 	}
 	i = 0;
 	while (i < std->amount)
-	{
-		sem_close(&std->forks_m[i]);
-		sem_close(std->philos[i].monitor);
 		pthread_join(tid[i++], NULL);
-	}
+	clear_state(std);
 	pthread_join(tid[1], NULL);
 }
 
