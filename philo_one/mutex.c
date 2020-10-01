@@ -6,13 +6,13 @@
 /*   By: iromero- <iromero-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 18:51:48 by iromero-          #+#    #+#             */
-/*   Updated: 2020/03/10 15:45:51 by iromero-         ###   ########.fr       */
+/*   Updated: 2020/10/01 19:15:59 by iromero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philosophers.h"
 
-int		ft_loop(t_philo *phi)
+int			ft_loop(t_philo *phi)
 {
 	if (phi->state->died)
 		return (0);
@@ -25,7 +25,7 @@ int		ft_loop(t_philo *phi)
 	return (1);
 }
 
-static void *monitor(void *philo_v)
+static void	*monitor(void *philo_v)
 {
 	t_philo		*philo;
 
@@ -48,10 +48,10 @@ static void *monitor(void *philo_v)
 	}
 }
 
-void	*ft_vida(t_philo *phi)
+void		*ft_vida(t_philo *phi)
 {
-	int i;
-	pthread_t tid;
+	int			i;
+	pthread_t	tid;
 
 	i = 0;
 	phi->last_eat = get_time();
@@ -73,7 +73,7 @@ void	*ft_vida(t_philo *phi)
 	return ((void*)0);
 }
 
-void	init_thread(t_state *std)
+void		init_thread(t_state *std)
 {
 	pthread_t	tid[std->amount];
 	pthread_t	tid2;
@@ -97,7 +97,7 @@ void	init_thread(t_state *std)
 	pthread_join(tid[1], NULL);
 }
 
-int		main(int argc, char **argv)
+int			main(int argc, char **argv)
 {
 	t_state std;
 

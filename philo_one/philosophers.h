@@ -6,7 +6,7 @@
 /*   By: iromero- <iromero-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 19:12:59 by iromero-          #+#    #+#             */
-/*   Updated: 2020/03/09 13:09:11 by iromero-         ###   ########.fr       */
+/*   Updated: 2020/10/01 19:17:09 by iromero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,8 +57,8 @@ char				*ft_strjoin(char const *s1, char const *s2);
 int					exit_error(char const *str);
 void				ft_writeme_baby(t_philo *phi, char *str);
 void				phi_eating(t_philo *phi);
-void 				phi_sleep(t_philo *phi);
-void 				phi_think(t_philo *phi);
+void				phi_sleep(t_philo *phi);
+void				phi_think(t_philo *phi);
 void				start_hilos(t_state *std);
 void				ft_writeme_baby2(t_philo *phi, char *str);
 #endif
