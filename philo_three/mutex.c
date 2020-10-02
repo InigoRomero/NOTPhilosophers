@@ -6,7 +6,7 @@
 /*   By: iromero- <iromero-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 18:51:48 by iromero-          #+#    #+#             */
-/*   Updated: 2020/10/02 16:47:09 by iromero-         ###   ########.fr       */
+/*   Updated: 2020/10/02 17:07:25 by iromero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,29 +80,33 @@ void		*ft_vida(t_philo *phi)
 
 void		init_thread(t_state *std)
 {
-	pthread_t	tid[std->amount];
-	pthread_t	tid2;
-	int			i;
-
+	int		i;
+	void	*philo;
+	int		status;
 	start_hilos(std);
 	i = -1;
 	while (++i < std->amount)
 	{
 		std->philos[i].last_eat = get_time();
-		pthread_create(&tid2, NULL, &monitor, &std->philos[i]);
-		pthread_create(&tid[i], NULL, (void*)&ft_vida, &std->philos[i]);
-		usleep(10);
+		std->philos[i].pid = fork();
+		if (std->philos[i].pid < 0)
+			return ;
+		else if (std->philos[i].pid == 0)
+		{
+			ft_vida(&std->philos[i]);
+			exit(0);
+		}
+		usleep(100);
+		i++;
 	}
-	i = 0;
-	while (i < std->amount)
-		pthread_join(tid[i++], NULL);
+	waitpid(std->philos[i].pid, &status, WUNTRACED);
 	clear_state(std);
-	pthread_join(tid[1], NULL);
 }
 
 int			main(int argc, char **argv)
 {
 	t_state std;
+	int		i;
 
 	if (argc < 5 || argc > 6)
 		return (exit_error("error: bad arguments\n"));
@@ -111,6 +115,8 @@ int			main(int argc, char **argv)
 		return (exit_error("Fatal Error\n"));
 	std.init = get_time();
 	init_thread(&std);
+	i = 0;
+
 	if (std.died == 1)
 		write(1, "🎮 GAME OVER 🎮 \n", 21);
 	else

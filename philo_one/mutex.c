@@ -6,7 +6,7 @@
 /*   By: iromero- <iromero-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 18:51:48 by iromero-          #+#    #+#             */
-/*   Updated: 2020/10/01 19:15:59 by iromero-         ###   ########.fr       */
+/*   Updated: 2020/10/02 17:17:18 by iromero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ static void	*monitor(void *philo_v)
 			return ((void*)0);
 		}
 		pthread_mutex_unlock(&philo->monitor);
-		usleep(1000);
+		usleep(100);
 	}
 }
 

@@ -6,7 +6,7 @@
 /*   By: iromero- <iromero-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 19:12:59 by iromero-          #+#    #+#             */
-/*   Updated: 2020/10/02 17:01:57 by iromero-         ###   ########.fr       */
+/*   Updated: 2020/10/02 17:02:02 by iromero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,12 @@
 # include <unistd.h>
 # include <pthread.h>
 # include <sys/time.h>
-# include <stdio.h>
 # include <semaphore.h>
+# include <signal.h>
 
 typedef struct		s_philo
 {
+	pid_t			pid;
 	int				position;
 	int				is_eating;
 	uint64_t		limit;
