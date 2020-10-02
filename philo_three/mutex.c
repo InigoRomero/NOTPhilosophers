@@ -6,7 +6,7 @@
 /*   By: iromero- <iromero-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 18:51:48 by iromero-          #+#    #+#             */
-/*   Updated: 2020/10/02 17:07:25 by iromero-         ###   ########.fr       */
+/*   Updated: 2020/10/02 17:35:13 by iromero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,7 +81,6 @@ void		*ft_vida(t_philo *phi)
 void		init_thread(t_state *std)
 {
 	int		i;
-	void	*philo;
 	int		status;
 	start_hilos(std);
 	i = -1;
