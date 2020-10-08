@@ -6,7 +6,7 @@
 /*   By: iromero- <iromero-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/27 16:04:26 by iromero-          #+#    #+#             */
-/*   Updated: 2020/10/02 17:38:09 by iromero-         ###   ########.fr       */
+/*   Updated: 2020/10/08 17:48:09 by iromero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,14 +31,17 @@ void	ft_writeme_baby(t_philo *phi, char *str)
 		time = ft_itoa(get_time() - phi->state->init);
 		position = ft_itoa(phi->position);
 		temp = ft_strjoin("\e[1;35m", time);
+		free(time);
 		temp2 = ft_strjoin(temp, ": \e[1;31mFilósofo ");
 		free(temp);
 		temp = ft_strjoin(temp2, position);
+		free(position);
 		free(temp2);
 		temp2 = ft_strjoin(temp, str);
 		pthread_mutex_lock(&phi->state->mutex);
 		write(1, temp2, ft_strlen(temp2));
 		free(temp);
+		free(temp2);
 		pthread_mutex_unlock(&phi->state->mutex);
 	}
 }
@@ -55,14 +58,17 @@ void	ft_writeme_baby2(t_philo *phi, char *str)
 		time = ft_itoa(get_time() - phi->state->init);
 		position = ft_itoa(phi->position);
 		temp = ft_strjoin("\e[1;35m", time);
+		free(time);
 		temp2 = ft_strjoin(temp, ": \e[1;31mFilósofo ");
 		free(temp);
 		temp = ft_strjoin(temp2, position);
+		free(position);
 		free(temp2);
 		temp2 = ft_strjoin(temp, str);
 		pthread_mutex_lock(&phi->state->mutex);
 		write(1, temp2, ft_strlen(temp2));
 		free(temp);
+		free(temp2);
 		pthread_mutex_unlock(&phi->state->mutex);
 	}
 }

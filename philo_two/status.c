@@ -6,7 +6,7 @@
 /*   By: iromero- <iromero-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/27 15:55:37 by iromero-          #+#    #+#             */
-/*   Updated: 2020/10/01 19:07:35 by iromero-         ###   ########.fr       */
+/*   Updated: 2020/10/05 17:13:31 by iromero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,17 +16,17 @@ void	phi_eating(t_philo *phi)
 {
 	if (phi->state->died == 0)
 	{
-		sem_wait(&phi->forks_m[phi->lfork]);
+		sem_wait(phi->forks_m);
+		sem_wait(phi->forks_m);
 		ft_writeme_baby(phi, " has taken a fork 🍴\n");
-		sem_wait(&phi->forks_m[phi->rfork]);
 		ft_writeme_baby(phi, " has taken a fork 🍴\n");
 		ft_writeme_baby(phi, " is eating 🍔\n");
 		phi->is_eating = 1;
-		phi->eat_count++;
 		phi->last_eat = get_time();
 		usleep(phi->state->time_to_eat * 1000);
-		sem_post(&phi->forks_m[phi->rfork]);
-		sem_post(&phi->forks_m[phi->lfork]);
+		phi->eat_count++;
+		sem_post(phi->forks_m);
+		sem_post(phi->forks_m);
 		phi->is_eating = 0;
 	}
 }

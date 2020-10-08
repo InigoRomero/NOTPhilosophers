@@ -6,7 +6,7 @@
 /*   By: iromero- <iromero-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/10 13:55:41 by iromero-          #+#    #+#             */
-/*   Updated: 2020/10/01 19:10:32 by iromero-         ###   ########.fr       */
+/*   Updated: 2020/10/05 17:05:56 by iromero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ int		clear_state(t_state *state)
 		i = 0;
 		while (i < state->amount)
 		{
-			make_semaphore_name("semaforoeat", (char*)semaphore, i++);
+			make_semaphore_name("semaforo", (char*)semaphore, i++);
 			sem_unlink(semaphore);
 		}
 		free(state->philos);

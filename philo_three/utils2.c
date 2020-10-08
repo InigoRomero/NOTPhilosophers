@@ -6,7 +6,7 @@
 /*   By: iromero- <iromero-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/27 16:04:26 by iromero-          #+#    #+#             */
-/*   Updated: 2020/10/01 19:10:19 by iromero-         ###   ########.fr       */
+/*   Updated: 2020/10/08 17:45:28 by iromero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,14 +31,17 @@ void	ft_writeme_baby(t_philo *phi, char *str)
 		time = ft_itoa(get_time() - phi->state->init);
 		position = ft_itoa(phi->position);
 		temp = ft_strjoin("\e[1;35m", time);
+		free(time);
 		temp2 = ft_strjoin(temp, ": \e[1;31mFilósofo ");
 		free(temp);
 		temp = ft_strjoin(temp2, position);
+		free(position);
 		free(temp2);
 		temp2 = ft_strjoin(temp, str);
 		sem_wait(phi->state->mutex);
 		write(1, temp2, ft_strlen(temp2));
 		free(temp);
+		free(temp2);
 		sem_post(phi->state->mutex);
 	}
 }
@@ -50,21 +53,21 @@ void	ft_writeme_baby2(t_philo *phi, char *str)
 	char *temp;
 	char *temp2;
 
-	if (phi->state->died == 1)
-	{
-		time = ft_itoa(get_time() - phi->state->init);
-		position = ft_itoa(phi->position);
-		temp = ft_strjoin("\e[1;35m", time);
-		temp2 = ft_strjoin(temp, ": \e[1;31mFilósofo ");
-		free(temp);
-		temp = ft_strjoin(temp2, position);
-		free(temp2);
-		temp2 = ft_strjoin(temp, str);
-		sem_wait(phi->state->mutex);
-		write(1, temp2, ft_strlen(temp2));
-		free(temp);
-		sem_post(phi->state->mutex);
-	}
+	time = ft_itoa(get_time() - phi->state->init);
+	position = ft_itoa(phi->position);
+	temp = ft_strjoin("\e[1;35m", time);
+	free(time);
+	temp2 = ft_strjoin(temp, ": \e[1;31mFilósofo ");
+	free(temp);
+	temp = ft_strjoin(temp2, position);
+	free(position);
+	free(temp2);
+	temp2 = ft_strjoin(temp, str);
+	sem_wait(phi->state->mutex);
+	write(1, temp2, ft_strlen(temp2));
+	free(temp);
+	free(temp2);
+	sem_post(phi->state->mutex);
 }
 
 size_t	ft_strlen(const char *s)

@@ -6,7 +6,7 @@
 /*   By: iromero- <iromero-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/10 13:55:41 by iromero-          #+#    #+#             */
-/*   Updated: 2020/10/01 19:10:32 by iromero-         ###   ########.fr       */
+/*   Updated: 2020/10/06 19:00:01 by iromero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,4 +68,23 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		dest[i++] = *s2++;
 	dest[i] = '\0';
 	return (dest);
+}
+
+void	ft_check_exit(t_state *std)
+{
+	int		status;
+	int		eat_count;
+
+	eat_count = std->must_eat_count;
+	while (eat_count >= 0)
+	{
+		if (sem_trywait(std->died2) == 0)
+			break ;
+		if (waitpid(-1, &status, 0) < 0)
+		{
+			eat_count--;
+			if (eat_count <= 0)
+				sem_post(std->died2);
+		}
+	}
 }

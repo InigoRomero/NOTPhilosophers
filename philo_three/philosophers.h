@@ -6,7 +6,7 @@
 /*   By: iromero- <iromero-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 19:12:59 by iromero-          #+#    #+#             */
-/*   Updated: 2020/10/02 17:02:02 by iromero-         ###   ########.fr       */
+/*   Updated: 2020/10/06 19:00:44 by iromero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 # include <sys/time.h>
 # include <semaphore.h>
 # include <signal.h>
+# include <stdio.h>
 
 typedef struct		s_philo
 {
@@ -44,6 +45,7 @@ typedef struct		s_state
 	uint64_t		init;
 	int				must_eat_count;
 	int				died;
+	sem_t			*died2;
 	t_philo			*philos;
 	sem_t			*forks_m;
 	sem_t			*mutex;
@@ -61,6 +63,7 @@ void				ft_writeme_baby(t_philo *phi, char *str);
 void				phi_eating(t_philo *phi);
 void				phi_sleep(t_philo *phi);
 void				phi_think(t_philo *phi);
+void				ft_check_exit(t_state *std);
 void				start_hilos(t_state *std);
 void				ft_writeme_baby2(t_philo *phi, char *str);
 sem_t				*ft_sem_open(char const *name, int value);

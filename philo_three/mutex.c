@@ -6,7 +6,7 @@
 /*   By: iromero- <iromero-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 18:51:48 by iromero-          #+#    #+#             */
-/*   Updated: 2020/10/02 17:35:13 by iromero-         ###   ########.fr       */
+/*   Updated: 2020/10/08 17:46:09 by iromero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,9 @@ static void	*monitor(void *philo_v)
 		{
 			if (philo->state->died == 0)
 			{
-				philo->state->died = 1;
+				sem_post(philo->state->died2);
 				ft_writeme_baby2(philo, " is DEATH 👻\n");
+				exit(0);
 			}
 			sem_post(philo->monitor);
 			return ((void*)0);
@@ -81,7 +82,7 @@ void		*ft_vida(t_philo *phi)
 void		init_thread(t_state *std)
 {
 	int		i;
-	int		status;
+
 	start_hilos(std);
 	i = -1;
 	while (++i < std->amount)
@@ -96,10 +97,8 @@ void		init_thread(t_state *std)
 			exit(0);
 		}
 		usleep(100);
-		i++;
 	}
-	waitpid(std->philos[i].pid, &status, WUNTRACED);
-	clear_state(std);
+	ft_check_exit(std);
 }
 
 int			main(int argc, char **argv)
@@ -115,9 +114,7 @@ int			main(int argc, char **argv)
 	std.init = get_time();
 	init_thread(&std);
 	i = 0;
-
-	if (std.died == 1)
-		write(1, "🎮 GAME OVER 🎮 \n", 21);
-	else
-		write(1, "🎮  YOU WIN 🎮 \n", 19);
+	while (i < std.amount)
+		kill(std.philos[i++].pid, SIGKILL);
+	clear_state(&std);
 }
