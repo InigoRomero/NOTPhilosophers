@@ -1,7 +1,7 @@
-# NOTPhilosophers
+# NOTPhilosophers <br>
 **Philo_one: Mutex and threads <br>
 Philo_two: Semaphores and threads <br>
-Philo_three: Semaphores, forks and threads** <br>
+Philo_three: Semaphores, forks and threads** <br> <br>
 0: Filósofo 0 is thinking 🤔<br>
 0: Filósofo 0 has taken a fork 🍴<br>
 0: Filósofo 0 has taken a fork 🍴<br>
