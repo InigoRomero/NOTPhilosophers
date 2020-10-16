@@ -6,7 +6,7 @@
 /*   By: iromero- <iromero-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/27 15:55:37 by iromero-          #+#    #+#             */
-/*   Updated: 2020/10/02 18:48:27 by iromero-         ###   ########.fr       */
+/*   Updated: 2020/10/15 17:57:50 by iromero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,11 @@ void	phi_eating(t_philo *phi)
 	if (phi->state->died == 0)
 	{
 		pthread_mutex_lock(&phi->forks_m[phi->lfork]);
-		ft_writeme_baby(phi, " has taken a fork 🍴\n");
 		pthread_mutex_lock(&phi->forks_m[phi->rfork]);
+		phi->is_eating = 1;
+		ft_writeme_baby(phi, " has taken a fork 🍴\n");
 		ft_writeme_baby(phi, " has taken a fork 🍴\n");
 		ft_writeme_baby(phi, " is eating 🍔\n");
-		phi->is_eating = 1;
 		phi->last_eat = get_time();
 		usleep(phi->state->time_to_eat * 1000);
 		phi->eat_count++;

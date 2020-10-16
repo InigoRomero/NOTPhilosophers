@@ -6,7 +6,7 @@
 /*   By: iromero- <iromero-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 20:19:05 by iromero-          #+#    #+#             */
-/*   Updated: 2020/10/06 18:48:01 by iromero-         ###   ########.fr       */
+/*   Updated: 2020/10/09 18:26:24 by iromero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ void	start_hilos(t_state *std)
 		std->philos[i].is_eating = 0;
 		std->philos[i].position = i;
 		make_semaphore_name("semaforo", (char*)semaphore, i);
-		std->philos[i].monitor = ft_sem_open(semaphore, i);
+		std->philos[i].monitor = ft_sem_open(semaphore, 1);
 		std->philos[i].lfork = i;
 		std->philos[i].eat_count = 0;
 		std->philos[i].rfork = (i + 1) % std->amount;

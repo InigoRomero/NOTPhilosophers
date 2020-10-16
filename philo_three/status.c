@@ -18,10 +18,10 @@ void	phi_eating(t_philo *phi)
 	{
 		sem_wait(phi->forks_m);
 		sem_wait(phi->forks_m);
+		phi->is_eating = 1;
 		ft_writeme_baby(phi, " has taken a fork 🍴\n");
 		ft_writeme_baby(phi, " has taken a fork 🍴\n");
 		ft_writeme_baby(phi, " is eating 🍔\n");
-		phi->is_eating = 1;
 		phi->last_eat = get_time();
 		usleep(phi->state->time_to_eat * 1000);
 		phi->eat_count++;

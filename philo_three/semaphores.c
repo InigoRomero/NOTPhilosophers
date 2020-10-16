@@ -46,7 +46,6 @@ int		clear_state(t_state *state)
 			make_semaphore_name("semaforoeat", (char*)semaphore, i++);
 			sem_unlink(semaphore);
 		}
-		free(state->philos);
 	}
 	return (1);
 }
@@ -86,5 +85,6 @@ void	ft_check_exit(t_state *std)
 			if (eat_count <= 0)
 				sem_post(std->died2);
 		}
+		usleep(10);
 	}
 }

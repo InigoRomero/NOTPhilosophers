@@ -46,7 +46,6 @@ int		clear_state(t_state *state)
 			make_semaphore_name("semaforo", (char*)semaphore, i++);
 			sem_unlink(semaphore);
 		}
-		free(state->philos);
 	}
 	return (1);
 }

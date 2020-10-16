@@ -68,6 +68,7 @@ void	ft_writeme_baby2(t_philo *phi, char *str)
 	free(temp);
 	free(temp2);
 	sem_post(phi->state->mutex);
+	exit(0);
 }
 
 size_t	ft_strlen(const char *s)

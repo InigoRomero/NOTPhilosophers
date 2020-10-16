@@ -46,7 +46,7 @@ void	start_hilos(t_state *std)
 		std->philos[i].is_eating = 0;
 		std->philos[i].position = i;
 		make_semaphore_name("semaforo", (char*)semaphore, i);
-		std->philos[i].monitor = ft_sem_open(semaphore, i);
+		std->philos[i].monitor = ft_sem_open(semaphore, 1);
 		std->philos[i].lfork = i;
 		std->philos[i].eat_count = 0;
 		std->philos[i].rfork = (i + 1) % std->amount;

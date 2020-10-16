@@ -6,7 +6,7 @@
 /*   By: iromero- <iromero-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 18:51:48 by iromero-          #+#    #+#             */
-/*   Updated: 2020/10/08 17:47:05 by iromero-         ###   ########.fr       */
+/*   Updated: 2020/10/15 19:04:23 by iromero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,8 @@ static void	*monitor(void *philo_v)
 	while (1)
 	{
 		pthread_mutex_lock(&philo->monitor);
-		if ((get_time() - philo->last_eat) > philo->state->time_to_die)
+		if ((get_time() - philo->last_eat) > philo->state->time_to_die
+			&& !philo->is_eating)
 		{
 			if (philo->state->died == 0)
 			{
@@ -47,7 +48,7 @@ static void	*monitor(void *philo_v)
 			&& philo->eat_count == philo->state->must_eat_count))
 			break ;
 		pthread_mutex_unlock(&philo->monitor);
-		usleep(100);
+		usleep(1000);
 	}
 	return ((void*)0);
 }
@@ -79,7 +80,6 @@ void		*ft_vida(t_philo *phi)
 void		init_thread(t_state *std)
 {
 	pthread_t	tid[std->amount];
-	pthread_t	tid2;
 	int			i;
 
 	start_hilos(std);
@@ -90,9 +90,8 @@ void		init_thread(t_state *std)
 	while (++i < std->amount)
 	{
 		std->philos[i].last_eat = get_time();
-		pthread_create(&tid2, NULL, &monitor, &std->philos[i]);
 		pthread_create(&tid[i], NULL, (void*)&ft_vida, &std->philos[i]);
-		usleep(10);
+		usleep(100);
 	}
 	i = 0;
 	while (i < std->amount)
@@ -114,5 +113,4 @@ int			main(int argc, char **argv)
 		write(1, "🎮 GAME OVER 🎮 \n", 21);
 	else
 		write(1, "🎮  YOU WIN 🎮 \n", 19);
-	system("leaks philo_one");
 }

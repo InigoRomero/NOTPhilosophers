@@ -6,7 +6,7 @@
 /*   By: iromero- <iromero-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 18:51:48 by iromero-          #+#    #+#             */
-/*   Updated: 2020/10/08 17:46:09 by iromero-         ###   ########.fr       */
+/*   Updated: 2020/10/15 18:13:09 by iromero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,15 +32,14 @@ static void	*monitor(void *philo_v)
 	philo = (t_philo*)philo_v;
 	while (1)
 	{
-		if (sem_wait(philo->monitor) != 0)
-			return ((void*)0);
-		if ((get_time() - philo->last_eat) > philo->state->time_to_die)
+		sem_wait(philo->monitor);
+		if ((get_time() - philo->last_eat) > philo->state->time_to_die
+			&& !philo->is_eating)
 		{
 			if (philo->state->died == 0)
 			{
 				sem_post(philo->state->died2);
 				ft_writeme_baby2(philo, " is DEATH 👻\n");
-				exit(0);
 			}
 			sem_post(philo->monitor);
 			return ((void*)0);
@@ -49,6 +48,7 @@ static void	*monitor(void *philo_v)
 			&& philo->eat_count == philo->state->must_eat_count))
 			break ;
 		sem_post(philo->monitor);
+		usleep(100);
 	}
 	sem_close(philo->monitor);
 	return ((void*)0);
@@ -56,10 +56,8 @@ static void	*monitor(void *philo_v)
 
 void		*ft_vida(t_philo *phi)
 {
-	int			i;
 	pthread_t	tid;
 
-	i = 0;
 	phi->last_eat = get_time();
 	if (pthread_create(&tid, NULL, &monitor, phi) != 0)
 		return ((void*)1);
@@ -85,9 +83,8 @@ void		init_thread(t_state *std)
 
 	start_hilos(std);
 	i = -1;
-	while (++i < std->amount)
+	while (i++ < std->amount)
 	{
-		std->philos[i].last_eat = get_time();
 		std->philos[i].pid = fork();
 		if (std->philos[i].pid < 0)
 			return ;
